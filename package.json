@@ -1,0 +1,8 @@
+﻿{
+  "name": "n8n-render",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Using Docker build, no npm build required'"
+  }
+}

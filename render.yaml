@@ -2,10 +2,16 @@
   - type: web
     name: n8n
     env: docker
+    region: ohio
     plan: starter
+    branch: render-deployment
     dockerfilePath: ./Dockerfile
+    dockerCommand: n8n start
     envVars:
       - key: NODE_ENV
         value: production
       - key: N8N_PORT
-        value: 5678
+        value: "5678"
+    buildFilter:
+      paths:
+        - Dockerfile
